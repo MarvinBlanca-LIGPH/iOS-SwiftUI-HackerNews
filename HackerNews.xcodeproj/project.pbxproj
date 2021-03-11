@@ -13,6 +13,10 @@
 		D3F5B35825F9FE2400FD5490 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F5B35725F9FE2400FD5490 /* Assets.xcassets */; };
 		D3F5B35B25F9FE2400FD5490 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3F5B35A25F9FE2400FD5490 /* Preview Assets.xcassets */; };
 		D3F5B35E25F9FE2400FD5490 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3F5B35C25F9FE2400FD5490 /* LaunchScreen.storyboard */; };
+		D3F5B36825FA008800FD5490 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5B36725FA008800FD5490 /* NetworkManager.swift */; };
+		D3F5B36C25FA01A400FD5490 /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5B36B25FA01A400FD5490 /* NewsData.swift */; };
+		D3F5B37025FA08E800FD5490 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F5B36F25FA08E800FD5490 /* DetailView.swift */; };
+		D3FA62F225FA0CE800A78B06 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3FA62F125FA0CE800A78B06 /* WebView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		D3F5B35A25F9FE2400FD5490 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		D3F5B35D25F9FE2400FD5490 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3F5B35F25F9FE2400FD5490 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3F5B36725FA008800FD5490 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		D3F5B36B25FA01A400FD5490 /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		D3F5B36F25FA08E800FD5490 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D3FA62F125FA0CE800A78B06 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +64,10 @@
 		D3F5B35025F9FE2200FD5490 /* HackerNews */ = {
 			isa = PBXGroup;
 			children = (
+				D3F5B36E25FA08D800FD5490 /* Views */,
+				D3F5B36625FA007900FD5490 /* Models */,
 				D3F5B35125F9FE2200FD5490 /* AppDelegate.swift */,
 				D3F5B35325F9FE2200FD5490 /* SceneDelegate.swift */,
-				D3F5B35525F9FE2200FD5490 /* ContentView.swift */,
 				D3F5B35725F9FE2400FD5490 /* Assets.xcassets */,
 				D3F5B35C25F9FE2400FD5490 /* LaunchScreen.storyboard */,
 				D3F5B35F25F9FE2400FD5490 /* Info.plist */,
@@ -73,6 +82,25 @@
 				D3F5B35A25F9FE2400FD5490 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D3F5B36625FA007900FD5490 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3F5B36725FA008800FD5490 /* NetworkManager.swift */,
+				D3F5B36B25FA01A400FD5490 /* NewsData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D3F5B36E25FA08D800FD5490 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D3F5B35525F9FE2200FD5490 /* ContentView.swift */,
+				D3F5B36F25FA08E800FD5490 /* DetailView.swift */,
+				D3FA62F125FA0CE800A78B06 /* WebView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,9 +173,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3F5B36825FA008800FD5490 /* NetworkManager.swift in Sources */,
+				D3F5B37025FA08E800FD5490 /* DetailView.swift in Sources */,
 				D3F5B35225F9FE2200FD5490 /* AppDelegate.swift in Sources */,
 				D3F5B35425F9FE2200FD5490 /* SceneDelegate.swift in Sources */,
 				D3F5B35625F9FE2200FD5490 /* ContentView.swift in Sources */,
+				D3F5B36C25FA01A400FD5490 /* NewsData.swift in Sources */,
+				D3FA62F225FA0CE800A78B06 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
